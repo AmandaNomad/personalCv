@@ -42,7 +42,7 @@ header .contenedorTexto .texto {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 3px;
     display: inline-block;
-    text-align: center;
+    text-align: justify;
     padding: 20px 60px;
 }
 
@@ -62,14 +62,13 @@ header .contenedorTexto .texto .nombre {
 header .contenedorTexto .texto .profesion {
     font-size: 20px;
     line-height: 20px;
+    text-align: center;
 }
 
 /*----------MAIN-------*/
 
 .main .contenedor {
     overflow: visible;
-   
-    
 }
 
 .main .acercaDe {
@@ -91,17 +90,6 @@ header .contenedorTexto .texto .profesion {
     border: 5px solid rgba(255, 255, 255, 0.2);
     width: 115px; /* Ajusta el tamaño de la imagen */
 }
-
-.main .acercaDe .texto {
-    color: #5a5a5a;
-    font-weight: 600px;
-    font-size: 1em;
-    line-height: 30px;
-    width: 80%;
-    text-align: center;
-    margin: auto;
-}
-
 .main .acercaDe .texto .titulo {
     font-size: 34px;
     margin-bottom: 30px;
@@ -122,6 +110,12 @@ header .contenedorTexto .texto .profesion {
 .main .historial {
     background: #f2f2f2;
     padding: 60px 0;
+}
+.historial{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
 }
 
 .main .historial .contenedor {
@@ -165,7 +159,7 @@ header .contenedorTexto .texto .profesion {
 /*-----------FOOTER----------*/
 
 footer .contacto {
-    padding: 60px 0;
+    padding: 10px 0;
 }
 
 footer .contacto .titulo {
@@ -176,49 +170,27 @@ footer .contacto .titulo {
     text-align: center;
 }
 
-footer .contacto .formulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-footer .contacto .formulario input[type="text"],
-footer .contacto .formulario input[type="email"] {
-    border: 29x solid #cecece;
-    border-radius: 5px;
-    padding: 15px 20px;
-    font-size: 15px;
-    color: #a4a4a4;
-}
-
-footer .contacto .formulario input[type="text"]:focus,
-footer .contacto .formulario input[type="email"]:focus {
-    border: 2px solid #3895ea;
-}
-
-footer .contacto .formulario input[type="text"],
-footer .contacto .formulario input[type="email"] {
-    width: 49%;
-    margin-bottom: 15px;
-}
-
-
-
-
 footer .redesSociales {
     background: #1e2b38;
-    padding: 60px 0;
+    padding: 10px 0;
+}
+
+.redesSociales {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
 }
 
 footer .redesSociales .contenedor {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
+.redesSociales .contenedor {
+    color: #dfd7d7;
 
-
-
-
-
+}
 /*-------MEDIAQUERIES*/
 
 @media screen and (max-width: 800px) {
@@ -238,10 +210,5 @@ footer .redesSociales .contenedor {
 
     header .contenedorTexto .texto .profesion {
         font-size: 18px;
-    }
-
-    footer .redesSociales .contenedor{
-        flex-wrap: wrap;
-        padding: 20px 0;
     }
 }
