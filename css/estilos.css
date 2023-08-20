@@ -39,7 +39,7 @@ header .contenedorTexto {
 }
 
 header .contenedorTexto .texto {
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: #a2aaaa;
     border-radius: 3px;
     display: inline-block;
     text-align: justify;
